@@ -1,40 +1,73 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
-template: splash # Remove or comment out this line to display the site sidebar on this page.
+title: 秋云文档
+description: 全栈开发者的个人技术文档与知识库
+template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
+  tagline: 记录、沉淀、分享 · 全栈开发者的技术笔记
   image:
     file: ../../assets/houston.webp
   actions:
-    - text: Example Guide
-      link: /guides/example/
+    - text: 开始阅读
+      link: /notes/
+      icon: open-book
+    - text: 代码片段
+      link: /snippets/
       icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
-      icon: external
+    - text: 关于我
+      link: /about/
+      icon: pencil
       variant: minimal
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
-## Next steps
+## 文档导航
 
 <CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
+	<Card title="📚 学习笔记" icon="pencil">
+		Java、Spring、Vue、微服务等技术领域的学习与思考。
 	</Card>
-	<Card title="Change page layout" icon="document">
-		Delete `template: splash` in `src/content/docs/index.mdx` to display a
-		sidebar on this page.
+	<Card title="🧩 代码片段" icon="code">
+		常用工具类、配置模板、最佳实践代码片段。
 	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
+	<Card title="🚀 项目作品" icon="rocket">
+		个人项目与开源贡献，技术实践案例展示。
 	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
+	<Card title="💡 问题解决" icon="document">
+		开发中遇到的问题与解决方案记录。
 	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
+</CardGrid>
+
+## 后端技术
+
+<CardGrid stagger>
+	<Card title="Java 核心" icon="code">
+		Java 基础、并发编程、JVM 调优、设计模式
+	</Card>
+	<Card title="Spring 生态" icon="setting">
+		Spring Boot、Spring Cloud、MyBatis-Plus、Sa-Token
+	</Card>
+	<Card title="数据库" icon="document">
+		MySQL、Redis、MongoDB、Elasticsearch
+	</Card>
+	<Card title="微服务" icon="add-document">
+		Nacos、Sentinel、RabbitMQ、Kafka、Dubbo
+	</Card>
+</CardGrid>
+
+## 前端技术
+
+<CardGrid stagger>
+	<Card title="Vue 生态" icon="code">
+		Vue 3、Vue Router、Pinia、Vite
+	</Card>
+	<Card title="UI 框架" icon="setting">
+		Element Plus、Ant Design Vue、Tailwind CSS
+	</Card>
+	<Card title="工程化" icon="document">
+		TypeScript、ESLint、Vite、Webpack
+	</Card>
+	<Card title="其他" icon="add-document">
+		Axios、ECharts、微信小程序
 	</Card>
 </CardGrid>
